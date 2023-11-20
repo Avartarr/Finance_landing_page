@@ -9,7 +9,7 @@ import {
 
 const Footer = () => {
   return (
-    <div className='text-white'>
+    <div className='text-white '>
         <div className='p-12 lg:px-64  mt-[-7rem] lg:mt-[-16rem]' >
             <img src={client} alt="" className='' />
         </div>

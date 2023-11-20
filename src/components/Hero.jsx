@@ -12,7 +12,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="flex pt-16 mx-5 max-w-md lg:max-w-none lg:pl-48 lg:mx-0">
-        <div class="flex-auto w-64 px-6 md:px-24 lg:px-10">
+        <div className="flex-auto w-64 px-6 md:px-24 lg:px-10">
           <p>
             Create and share preofessional invoices for <br /> your customers.
             Send reminders

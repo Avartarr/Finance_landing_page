@@ -2,6 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+.landing{
   background-color:  	#1e453e;
 }
+
+.sidebar{
+  background: #1e453e;
+  color: #fff;
+  height: 100vh;
+  /* width: 200px; */
+  transition: all 0.5s;
+}
+.top_section{
+  display: flex;
+  align-items:center;
+  padding:20px 15px;
+}
+.logo{
+  font-size: 30px;
+}
+.bars{
+  display: flex;
+  font-size: 25px;
+  margin-left: 50px;
+}
+.linke{
+  display: flex;
+  color: #fff;
+  padding: 10px 15px;
+  gap: 15px;
+  transition: all 0.5s;
+}
+
+
