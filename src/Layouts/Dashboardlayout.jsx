@@ -1,12 +1,12 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import Sidebar from "./Sidebar";
+import Sidebar from "../components/Navigation/Sidebar";
 
-const Dlayout = () => {
+const DashboardLayout = () => {
   return (
     <>
       <div className="flex flex-row">
-        <div className="w-50">
+        <div>
           <Sidebar />
         </div>
 
@@ -18,4 +18,4 @@ const Dlayout = () => {
   );
 };
 
-export default Dlayout;
+export default DashboardLayout;

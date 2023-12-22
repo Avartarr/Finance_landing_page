@@ -1,62 +1,7 @@
-// import React, {useEffect, useState} from 'react'
-// import { Link } from 'react-router-dom';
-// // import uuid from 'uuid'
-
-// const About = () => {
-//  const [books, setBooks] = useState ([
-//     {title: 'Emelda', id: 1},
-//     {title: 'Half of a yellow sun', id: 2},
-//     {title: 'Chimamanda', id: 3}
-//   ]);
-
-//   const addBook = (title) => {
-//     setBooks([...books, {title, id: 4}]);
-//   }
-//   const removeBook = (id) => {
-//    setBooks(books.filter(book => book.id !== id));
-//   }
-
-//   const [title, setTitle] = useState('');
-
-//   const handleSubmit = (e) => {
-//     e.preventDefault();
-//     addBook(title);
-//     setTitle('')
-//   }
-
-//   useEffect(() => {
-//     console.log("This is the books array", books);
-//   })
-
-//   return (
-//     <div>
-//         <h1>About us</h1>
-//     <Link to="/product" className='btn bg-white'>Products</Link>
-//     <ul>
-//       {books.map(book => {
-//         return(<li key={book.id}>
-//          {book.id}. {book.title}
-//           </li>
-//           );
-//       })}
-//     </ul>
-
-//     <form onSubmit={handleSubmit}>
-//       <label htmlFor="">Add Book:</label>
-//       <input type="text" required placeholder='book' value={title} onChange={(e) => setTitle(e.target.value)} />
-//       <input type='submit' value='add song' />
-//     </form>
-//     </div>
-//   )
-// }
-
-// export default About
-
 import React from "react";
 import about1 from "../assets/about1.png";
 import vision from "../assets/vision.jpg";
 import { toast } from 'react-toastify';
-// import Footer from "./Footer";
 
 const About = () => {
   const handleSuccess = () => {

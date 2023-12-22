@@ -1,0 +1,16 @@
+.footerp{
+    font-size: smaller;
+    color: rgb(197, 195, 195);
+    padding: 4px;
+}
+
+.subscribe{
+grid-column: span-2;
+}
+
+hr{
+    color: gray;
+    background-color: gray;
+    height: 1px;
+    border: none;
+}

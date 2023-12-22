@@ -25,7 +25,8 @@ const Grip = () => {
         ) : (
             <ul>
             {data.map((item, index) => (
-                <li key={item.id}>{item.title}</li>
+                <li>{item.id}. {item.title}</li>
+                
             ))}
             </ul>
             )}

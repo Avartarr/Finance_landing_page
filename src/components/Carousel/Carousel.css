@@ -1,0 +1,105 @@
+.carousel{
+    overflow: hidden;
+    width: 1400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.carousel-img{
+    width: 520px;
+    padding: 0 20px 0 20px;
+    height: 350px;
+    object-fit:cover
+}
+
+.inner{
+    white-space: nowrap;
+    transition: transform 0.3s;
+}
+
+.carousel-item{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    width: 1400px;
+    background: linear-gradient(to left,  #c9d681 80%, #e9f6f9 20%);
+    
+}
+
+.carousel-item-text{
+    font-size: 1.5rem;
+    margin: 40px 0 40px 0;
+    padding: 0 130px 0 50px;
+    white-space: normal;
+    color: black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif    
+}
+
+.carousel-buttons{
+    display: flex;
+    justify-content:right;
+   
+}
+
+.button-arrow{
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    background-color: #c9d681;
+    border-radius: 3rem;
+    padding: 10px;
+    color: black;
+    
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .carousel {
+        width: 700px;
+    }
+
+    .carousel-item {
+        width: 700px; 
+    }
+    .carousel-item-text{
+        font-size: 1rem;
+        margin: 40px 0 40px 0;
+        padding: 0 50px 0 10px;
+        white-space: normal;
+        color: black;
+        width: 100%;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif    
+    }
+    .carousel-img{
+        width: 320px;
+        padding: 0 10px 0 20px;
+        height: 350px;
+        object-fit:cover
+    }
+}
+
+
+/* Media query for smaller screens*/
+@media only screen and (max-width: 480px) {
+    .carousel {
+        width: 400px;
+    }
+
+    .carousel-item {
+        width: 400px;
+        height: 250px;
+    }
+    .carousel-item-text{
+        font-size: 0.8rem;
+        margin: 40px 0 40px 0;
+        padding: 0 10px 0 10px;
+        width: 100%;
+    }
+    .carousel-img{
+        width: 200px;
+        padding: 0 10px 0 20px;
+        height: 246px;
+    }
+}

@@ -6,15 +6,16 @@ import {
   AiOutlineHome,
   AiOutlineUser,
 } from "react-icons/ai";
+import './Sidebar.css';
 
 const Sidebar = ({children}) => {
-  const[isOpen ,setIsOpen] = useState(false);
+  const[isOpen ,setIsOpen] = useState(true);
   const toggle = () => setIsOpen (!isOpen);
   const menuItem=[
       {
           path:"/",
           name:"Home",
-          icon:<AiOutlineHome size={30}/>
+          icon: <AiOutlineHome size={30}/>
       },
       {
           path:"/about",
@@ -44,7 +45,7 @@ const Sidebar = ({children}) => {
       
   ]
   return (
-    //   <div className="container">
+    
          <div style={{width: isOpen ? "200px" : "50px"}} className="sidebar">
              <div className="top_section">
                  <h1 style={{display: isOpen ? "block" : "none"}} className="logo">SOUNDGA</h1>
@@ -54,13 +55,12 @@ const Sidebar = ({children}) => {
              </div>
              {
                  menuItem.map((item, index)=>(
-                     <NavLink to={item.path} key={index} className="linke" activeclassName="activee">
+                     <NavLink to={item.path} key={index} className="linke">
                          <div className="icon">{item.icon}</div>
-                         <div style={{display: isOpen ? "block" : "none"}} className="link_text">{item.name}</div>
+                         <div style={{display: isOpen ? "block" : "none"}}>{item.name}</div>
                      </NavLink>
                  ))
              }
-         {/* </div> */}
          <main>{children}</main>
       </div>
   );
